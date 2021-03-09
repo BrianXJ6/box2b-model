@@ -1,10 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "box2b/box2b",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The box2b Project.",
     "keywords": [
         "framework",
-        "laravel"
+        "box2b"
     ],
     "license": "MIT",
     "require": {
