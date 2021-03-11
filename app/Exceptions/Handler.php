@@ -15,15 +15,16 @@ class Handler extends ExceptionHandler {
     protected function invalidJson($request, ValidationException $exception) {
         return response()->json([
             'status'  => 'error',
-            'message' => $exception->getMessage(),
+            'message' => __($exception->getMessage()),
             'errors'  => $exception->errors(),
         ], $exception->status);
     }
 
     protected function convertExceptionToArray(Throwable $e) {
+        $translateMessage = __($e->getMessage());
         return config('app.debug') ? [
             'status'    => 'error',
-            'message'   => $e->getMessage(),
+            'message'   => $translateMessage,
             'exception' => get_class($e),
             'file'      => $e->getFile(),
             'line'      => $e->getLine(),
@@ -32,7 +33,7 @@ class Handler extends ExceptionHandler {
             })->all(),
         ] : [
             'status' => 'error',
-            'message' => $this->isHttpException($e) ? $e->getMessage() : 'Server Error',
+            'message' => $this->isHttpException($e) ? $translateMessage : 'Server Error',
         ];
     }
 }
