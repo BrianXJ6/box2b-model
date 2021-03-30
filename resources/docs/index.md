@@ -1,5 +1,5 @@
 ---
-title: Box2b Documentation
+title: Box2b Model Documentation
 
 language_tabs:
 - javascript
@@ -22,11 +22,11 @@ toc_footers:
 
 
 
-This documentation aims to provide all the information you need to work with our API.
+Esta documentação visa fornecer todas as informações de que você precisa para trabalhar com nossa API.
 
 
 > Base URL
 
 ```yaml
-http://192.168.0.114:8080
+http://192.168.0.114:1001
 ```

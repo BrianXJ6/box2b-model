@@ -2,13 +2,15 @@
 
 namespace App\Models;
 
+use App\Traits\Models\GenerateUuid;
 use Illuminate\Notifications\Notifiable;
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable {
+class User extends Authenticatable implements MustVerifyEmail {
 
-    use Notifiable;
+    use GenerateUuid, Notifiable, SoftDeletes;
 
     protected $fillable = ['name', 'email', 'password'];
     protected $hidden   = ['password', 'remember_token'];

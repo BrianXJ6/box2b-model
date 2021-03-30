@@ -67,15 +67,15 @@ return [
 
     'auth' => [
         'enabled'     => true,
-        'default'     => true,
+        'default'     => false,
         'in'          => 'bearer',
         'name'        => 'token',
         'use_value'   => env('SCRIBE_AUTH_TOKEN'),
         'placeholder' => '{YOUR_AUTH_TOKEN}',
-        'extra_info'  => 'You can retrieve your token by visiting your dashboard and clicking <b>Generate API token</b>.',
+        'extra_info'  => '',
     ],
 
-    'intro_text' => 'This documentation aims to provide all the information you need to work with our API.',
+    'intro_text' => 'Esta documentação visa fornecer todas as informações de que você precisa para trabalhar com nossa API.',
 
     'example_languages' => [
         'javascript',

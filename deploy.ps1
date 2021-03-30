@@ -1,4 +1,8 @@
-﻿# Excluir pastas e arquivos ignorados (OPCIONAL).
+﻿# ssh -v emailofertaviagem@IP-DO-SERVIDOR-AQUI
+# sudo -i
+# cd /var/www/html
+
+# Excluir pastas e arquivos ignorados (OPCIONAL).
 # rm -r .\vendor\, .\node_modules\, .\composer.lock, .\package-lock.json, .\public\css\, .\public\fonts\, .\public\js\, .\public\mix-manifest.json;
 
 # Instalar pacotes do NPM e complilar para produção.

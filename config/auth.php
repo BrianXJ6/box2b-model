@@ -5,7 +5,7 @@ return [
 
     'guards' => [
         'user'    => ['driver' => 'session', 'provider' => 'users'],
-        'apiUser' => ['driver' => 'token', 'provider' => 'users', 'hash' => false],
+        'apiUser' => ['driver' => 'token', 'provider' => 'users', 'hash' => true],
     ],
 
     'providers' => [
