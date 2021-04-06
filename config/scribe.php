@@ -24,7 +24,7 @@ return [
                 'headers' => ['Accept' => 'application/json'],
 
                 'response_calls' => [
-                    'methods' => ['GET', 'POST', 'PUT', 'DELETE'],
+                    'methods' => ['*'],
 
                     'config' => [
                         'app.env' => 'documentation',
