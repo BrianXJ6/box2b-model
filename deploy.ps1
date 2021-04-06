@@ -3,7 +3,7 @@
 # cd /var/www/html
 
 # Excluir pastas e arquivos ignorados (OPCIONAL).
-# rm -r .\vendor\, .\node_modules\, .\composer.lock, .\package-lock.json, .\public\css\, .\public\fonts\, .\public\js\, .\public\mix-manifest.json;
+# rm -r .\vendor\, .\node_modules\, .\composer.lock, .\package-lock.json, .\public\css\, .\public\fonts\, .\public\js\, .\public\mix-manifest.json, .\resources\docs, .\resources\views\scribe, .\public\docs, .\public\vendor;
 
 # Instalar pacotes do NPM e complilar para produção.
 # npm i;
@@ -23,3 +23,7 @@
 # php artisan route:cache;
 # php artisan view:cache;
 # php artisan storage:link;
+
+# Comandos básicos GIT
+# git reset --hard
+# git pull --rebase origin <rep>
